@@ -27,9 +27,8 @@ The circuit was implemented in Cadence Virtuoso using the BiCMOS8HP technology a
 ## Tools
 
 Cadence Virtuoso  
-Spectre Simulator  
 AnalogLib  
-BiCMOS8HP PDK  
+BiCMOS8HP 
 
 ## Results
 
