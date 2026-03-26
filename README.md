@@ -26,9 +26,8 @@ The design required transistor sizing and bias optimization to achieve high band
 ## Tools
 
 Cadence Virtuoso  
-Spectre Simulator  
 AnalogLib  
-BiCMOS8HP PDK  
+BiCMOS8HP 
 
 ## Results
 
