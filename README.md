@@ -1,39 +1,41 @@
-# Wideband Linear Driver
+# Wideband Linear CMOS Driver
 
-Analog IC design project – wideband CMOS receiver amplifier designed for high-frequency serial communication.
+Analog IC design project – wideband receiver amplifier designed for high-frequency serial communication.
 
-## Project goal
+## Overview
 
-Design a wideband linear driver suitable for 2 Gb/s serial communication using a fixed CMOS topology.  
-The design required transistor sizing and bias optimization to achieve high bandwidth while maintaining low power consumption.
+This project implements a wideband linear CMOS driver designed for receiver front-end applications supporting multi-Gb/s data rates.  
+The circuit was implemented in Cadence Virtuoso using the BiCMOS8HP technology and optimized to meet strict gain, bandwidth, and power consumption requirements.
 
 ## Specifications
 
-- DC Gain: 25 ± 0.1 dB  
-- 3-dB Bandwidth: 1 ± 0.02 GHz  
-- Maximum Power Consumption: 200 µW  
-- Supply voltage: 1 V  
-- Load capacitance: 10 fF  
-- Technology: BiCMOS8HP (Cadence)  
+- DC Gain: 25 dB
+- 3-dB Bandwidth: 1 GHz
+- Maximum Power Consumption: 200 µW
+- Supply Voltage: 1 V
+- Load Capacitance: 10 fF
+- Technology: BiCMOS8HP
 
-## Design requirements
+## Design Requirements
 
-- All transistors must operate in saturation
+- Fixed topology (no additional components allowed)
+- All transistors in saturation region
 - Overdrive voltage > 50 mV
-- No additional components allowed
-- Only transistor sizing and resistor values could be changed
+- Gain, bandwidth, and power must meet spec simultaneously
+- Verified using AC, transient, and bias simulations
 
 ## Tools
 
 Cadence Virtuoso  
+Spectre Simulator  
 AnalogLib  
-BiCMOS8HP 
+BiCMOS8HP PDK  
 
 ## Results
 
-The designed amplifier meets the required gain and bandwidth while maintaining linear operation and low power consumption.  
-Frequency response, transient simulations, and bias point analysis were used to verify performance.
+The designed driver achieves the required gain and wideband response while maintaining low power consumption.  
+Simulation results include AC response, transient linearity verification, and bias point analysis.
 
 ## Report
 
-[Project report](./wideband_linear_driver_report.pdf)
+[Project report](./DesignEx2_Wide_and_Linear_Driver.pdf)
